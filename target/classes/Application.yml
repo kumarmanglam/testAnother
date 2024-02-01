@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    name: bike
+    url: jdbc:mysql://localhost:3306/bike?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: omsairam
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+      format_sql: true
+      show-sql: true
