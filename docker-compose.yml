@@ -12,6 +12,8 @@ services:
       SPRING_DATASOURCE_DRIVER-CLASS-NAME: com.mysql.cj.jdbc.Driver
     depends_on:
       - db
+    command: [ "sh", "-c", "sleep 30 && java -jar /opt/app.jar" ]
+
 
   db:
     image: mysql:8.3.0
