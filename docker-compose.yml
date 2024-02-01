@@ -9,6 +9,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/bike?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
       SPRING_DATASOURCE_USERNAME: admin
       SPRING_DATASOURCE_PASSWORD: root
+      SPRING_DATASOURCE_DRIVER-CLASS-NAME: com.mysql.cj.jdbc.Driver
     depends_on:
       - db
 
